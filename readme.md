@@ -1,5 +1,7 @@
 # blessed-grid-layout
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/SirWindfield/blessed-grid-layout.svg)](https://greenkeeper.io/)
+
 > A grid layout for blessed.
 
 [![NPM version][npm-image]][npm-url]
