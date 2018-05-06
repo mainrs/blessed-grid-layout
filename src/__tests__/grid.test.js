@@ -122,7 +122,7 @@ describe('Renders grid', () => {
 				height: '50%',
 				width: '50%',
 				border: {
-					fg: 'cyan',
+					fg: 'white',
 					type: 'line'
 				}
 			};

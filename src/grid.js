@@ -61,7 +61,7 @@ class GridLayout {
 		if (args.border) {
 			passedProperties.border = {
 				type: 'line',
-				fg: 'cyan'
+				fg: 'white'
 			};
 		}
 
