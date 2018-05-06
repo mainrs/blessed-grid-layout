@@ -1,6 +1,6 @@
 # blessed-grid-layout
 
-> A grid layout for blessed.
+> A grid layout for [blessed](https://github.com/chjj/blessed/).
 
 [![NPM version][npm-image]][npm-url]
 [![NPM Total Downloads][npm-dt-image]][npm-url]\
