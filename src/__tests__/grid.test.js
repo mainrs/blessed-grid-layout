@@ -104,4 +104,30 @@ describe('Renders grid', () => {
 			testConditions(gridParams, expectParams);
 		});
 	});
+
+	describe('With optional border', () => {
+		it('should render a border if requested', () => {
+			const gridParams = {
+				column: 1,
+				row: 1,
+
+				height: 1,
+				width: 1,
+
+				border: true
+			};
+			const expectParams = {
+				left: '50%',
+				top: '50%',
+				height: '50%',
+				width: '50%',
+				border: {
+					fg: 'cyan',
+					type: 'line'
+				}
+			};
+
+			testConditions(gridParams, expectParams);
+		});
+	});
 });
