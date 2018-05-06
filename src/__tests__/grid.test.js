@@ -11,7 +11,7 @@ MockedParent.mockImplementation(() => {
 	};
 });
 
-describe('Renders grid', () => {
+describe('GridLayout', () => {
 	const parent = new MockedParent();
 	let grid = null;
 
@@ -34,7 +34,7 @@ describe('Renders grid', () => {
 		mockedAppend.mockReset();
 	});
 
-	describe('With same-sized grid elements', () => {
+	describe('renders with same-sized grid elements', () => {
 		it('should properly render the top left component', () => {
 			const gridParams = {
 				column: 0,
@@ -105,29 +105,27 @@ describe('Renders grid', () => {
 		});
 	});
 
-	describe('With optional border', () => {
-		it('should render a border if requested', () => {
-			const gridParams = {
-				column: 1,
-				row: 1,
+	it('should render a border if requested', () => {
+		const gridParams = {
+			column: 1,
+			row: 1,
 
-				height: 1,
-				width: 1,
+			height: 1,
+			width: 1,
 
-				border: true
-			};
-			const expectParams = {
-				left: '50%',
-				top: '50%',
-				height: '50%',
-				width: '50%',
-				border: {
-					fg: 'white',
-					type: 'line'
-				}
-			};
+			border: true
+		};
+		const expectParams = {
+			left: '50%',
+			top: '50%',
+			height: '50%',
+			width: '50%',
+			border: {
+				fg: 'white',
+				type: 'line'
+			}
+		};
 
-			testConditions(gridParams, expectParams);
-		});
+		testConditions(gridParams, expectParams);
 	});
 });
