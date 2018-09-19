@@ -55,7 +55,7 @@
 		"prettier": "^1.11.1",
 		"rimraf": "^2.6.2",
 		"semantic-release": "^15.3.0",
-		"travis-deploy-once": "^5.0.0"
+		"travis-deploy-once": "^5.0.8"
 	},
 	"engines": {
 		"npm": ">= 4.0.0"
